@@ -11,12 +11,10 @@ namespace Entidades
         static private string ValidarOperador(char operador)
         {
             string retorno = "+";
+        
             if (operador == '+' || operador == '-' || operador == '*' || operador == '/')
-            {
                 retorno = operador.ToString();
-
-            }
-
+          
             return retorno;
         }
 
@@ -24,6 +22,8 @@ namespace Entidades
         {
 
             double retorno = 0;
+
+
 
             string validado = ValidarOperador(Convert.ToChar(operador));
 
@@ -44,11 +44,12 @@ namespace Entidades
                 case "/":
                     retorno = num1 / num2;
                     break;
+     
 
             }
 
 
-            return 0;
+            return retorno;
 
         }
 

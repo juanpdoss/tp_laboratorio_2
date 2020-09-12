@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Entidades
-{
-   
+{  
     public class Numero
     {
      
@@ -26,23 +25,11 @@ namespace Entidades
             {
                 int numero = 0;
                 string rta = "Valor invalido";
-                int aux = 1;
-
+              
                 if (EsBinario(binario))
-                {
-                    for (int i = 0; i < binario.Length; i++)
-                    {
-                        if (binario[i] == '1')
-                        {
-                            numero = (int)(numero + 1 * Math.Pow(2, binario.Length - aux));
-                            aux++;
-                        }
-                        else
-                            continue;
-                    }
-
-                    rta = numero.ToString();
-
+                {      
+                  numero = Convert.ToInt32(binario, 2);
+                  rta = Convert.ToString(numero);
                 }
                 return rta;
             }
