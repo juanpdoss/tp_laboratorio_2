@@ -19,7 +19,8 @@ namespace Entidades
         {
             get
             {
-                return ETamanio.Grande;
+                //retorno mediano para coincidir con el ejecutable de ejemplo que se nos dio 
+                return ETamanio.Mediano;
             }
         }
 
