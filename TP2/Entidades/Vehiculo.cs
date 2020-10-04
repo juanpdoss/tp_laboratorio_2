@@ -126,6 +126,11 @@ namespace Entidades
         }
         #endregion
 
+        /// <summary>
+        /// override del metodo Equals de Object, compara dos objetos del tipo vehiculo por su campo chasis, reutilizando el operador ==
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object obj)
         {
             bool sonIguales = false;
@@ -140,7 +145,10 @@ namespace Entidades
             return sonIguales;    
         }
 
-
+        /// <summary>
+        /// override del metodo GetHashCode de Object
+        /// </summary>
+        /// <returns></returns>
         public override int GetHashCode()
         {
             return base.GetHashCode();

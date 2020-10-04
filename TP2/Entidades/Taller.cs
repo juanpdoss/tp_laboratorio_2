@@ -29,11 +29,13 @@ namespace Entidades
 
 
         #region "Constructores"
+        //solo se invoca a traves del constructor publico
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
 
+        //constructor publico de taller, recibe solo un parametro para el campo espacioDisponible
 
         public Taller(int espacioDisponible) : this()
         {
