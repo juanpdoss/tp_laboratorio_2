@@ -127,7 +127,7 @@ namespace Entidades
                 //si el vehiculo que recibo por parametro esta en el taller, 
                 //corto la estructura repetitiva y cambio mi variable yaEstaEnTaller a true
 
-                if(auxiliar.Equals(vehiculo))
+                if(auxiliar == vehiculo)
                 {
                     yaEstaEnTaller = true;
                     break;
@@ -151,9 +151,15 @@ namespace Entidades
         /// <returns></returns>
         public static Taller operator -(Taller taller, Vehiculo vehiculo)
         {
-            if(taller.vehiculos.Contains(vehiculo))
+            foreach (Vehiculo item in taller.vehiculos)
             {
-                taller.vehiculos.Remove(vehiculo);
+                if(item == vehiculo)
+                {
+                    taller.vehiculos.Remove(vehiculo);
+                    break;
+       
+                }
+
             }
 
             return taller;

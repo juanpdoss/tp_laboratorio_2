@@ -58,15 +58,11 @@ namespace Entidades
         /// 
 
         #region propiedades
-        protected virtual ETamanio Tamanio
-        {           
-            get
-            {
-                return this.Tamanio;
-            }
-                
+        protected abstract ETamanio Tamanio
+        {
+            get;
         }
-
+ 
         #endregion
 
         #region metodos
@@ -121,40 +117,13 @@ namespace Entidades
         /// <returns></returns>
         public static bool operator !=(Vehiculo v1, Vehiculo v2)
         {
-            //reutilizo el operador ==
-            return !(v1.chasis == v2.chasis);
+           
+            return !(v1 == v2);
         }
         #endregion
 
-        /// <summary>
-        /// override del metodo Equals de Object, compara dos objetos del tipo vehiculo por su campo chasis, reutilizando el operador ==
-        /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
-        public override bool Equals(object obj)
-        {
-            bool sonIguales = false;
-
-            //reutilizo el operador ==, por lo que internamente sigo comparado por atributo chasis
-        
-            if(obj is Vehiculo)
-            {
-                sonIguales = this == (Vehiculo)obj;
-            }
-       
-            return sonIguales;    
-        }
-
-        /// <summary>
-        /// override del metodo GetHashCode de Object
-        /// </summary>
-        /// <returns></returns>
-        public override int GetHashCode()
-        {
-            return base.GetHashCode();
-        }
-
-
-
     }
+
+
 }
+
