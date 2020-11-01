@@ -31,6 +31,9 @@ namespace Clases_Instanciables
         #endregion
 
         #region propiedades
+        /// <summary>
+        /// Propiedad que retorna y establece el atributo de tipo lista alumnos.
+        /// </summary>
         public List<Alumno> Alumnos
         {
             get
@@ -43,6 +46,9 @@ namespace Clases_Instanciables
                 this.alumnos = value;
             }
         }
+        /// <summary>
+        /// propiedad que retorna y establece el atributo de tipo lista profesor.
+        /// </summary>
         public List<Profesor> Instructores
         { get
             {
@@ -55,6 +61,9 @@ namespace Clases_Instanciables
             }
 
         }
+        /// <summary>
+        /// propiedad que retorna y establece el atributo de tipo lista jornada.
+        /// </summary>
         public List<Jornada> Jornadas
         {
             get
@@ -68,7 +77,11 @@ namespace Clases_Instanciables
             }
 
         }
-
+        /// <summary>
+        /// Indexador, utilizado para establecer o recuperar una jornada de la universidad en una posicion especifica.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
         public Jornada this[int index]
         {
             //indexador

@@ -23,6 +23,9 @@ namespace Clases_Instanciables
         #endregion
 
         #region propiedades
+        /// <summary>
+        /// Propieda que retorna y establece el atributo de tipo lista alumnos
+        /// </summary>
         public List<Alumno> Alumnos
         {
             get
@@ -35,7 +38,9 @@ namespace Clases_Instanciables
                 this.alumnos = value;
             }
         }
-
+        /// <summary>
+        /// propieda que retorna y establece el atributo de tipo enumerado clases
+        /// </summary>
         public EClases Clase
         {
             get
@@ -49,6 +54,9 @@ namespace Clases_Instanciables
             }
         }
 
+        /// <summary>
+        /// propiedad que retorna y establece el atributo de tipo Profesor instructor
+        /// </summary>
         public Profesor Instructor
         {
             get

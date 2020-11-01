@@ -29,7 +29,9 @@ namespace EntidadesAbstractas
         #endregion anidado
 
         #region propiedades
-
+        /// <summary>
+        /// Propiedad que retorna el atributo de cadena apellido, y lo establece (previa validacion).
+        /// </summary>
         public string Apellido
         {
             get
@@ -41,7 +43,9 @@ namespace EntidadesAbstractas
                 this.apellido = Persona.ValidarNombreApellido(value);
             }
         }
-
+        /// <summary>
+        /// Propiedad que retorna y establece el atributo de tipo enumerado nacionalidad.
+        /// </summary>
         public ENacionalidad Nacionalidad
         {
             get
@@ -54,6 +58,9 @@ namespace EntidadesAbstractas
                 this.nacionalidad = value;
             }
         }
+        /// <summary>
+        /// Propiedad que retorna el atributo de tipo entero dni y lo establece (previa validacion).
+        /// </summary>
         public int DNI  
         {
             get
@@ -65,6 +72,9 @@ namespace EntidadesAbstractas
                 this.dni = Persona.ValidarDni(this.nacionalidad,value);
             }
         }
+        /// <summary>
+        /// propiedad que solo establece el atributo de tipo cadena dni (previa validacion).
+        /// </summary>
         public string StringToDNI
         {
             set
@@ -72,8 +82,9 @@ namespace EntidadesAbstractas
                 this.dni = Persona.ValidarDni(this.Nacionalidad, value);
             }
         }
-
-
+        /// <summary>
+        /// Propiedad que retorna el atributo de tipo cadena nombre y lo establece (previa validacion).
+        /// </summary>
         public string Nombre 
         { 
             get
