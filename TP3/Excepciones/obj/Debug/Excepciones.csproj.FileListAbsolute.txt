@@ -4,3 +4,9 @@ C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\Excepciones\obj\Debu
 C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
 C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\Excepciones\obj\Debug\Excepciones.dll
 C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\Excepciones\obj\Debug\Excepciones.pdb
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\TP3\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\TP3\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\TP3\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\TP3\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\TP3\Excepciones\obj\Debug\Excepciones.pdb
