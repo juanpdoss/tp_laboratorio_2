@@ -54,7 +54,7 @@ namespace EntidadesAbstractas
         {
             bool sonIguales = false;
                 
-            if(a.GetType() == b.GetType() && (a.legajo == b.legajo || a.DNI == b.DNI))
+            if(a.legajo == b.legajo || a.DNI == b.DNI)
             {                            
                    sonIguales = true;                
             }

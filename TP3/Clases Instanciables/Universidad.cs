@@ -292,7 +292,9 @@ namespace Clases_Instanciables
             return u;
         }
 
+        #endregion
 
+        #region metodos
         /// <summary>
         /// serializará los datos del Universidad en un XML, incluyendo todos los datos de sus
         /// Profesores, Alumnos y Jornadas.
@@ -343,7 +345,7 @@ namespace Clases_Instanciables
         {
             return Universidad.MostrarDatos(this);
         }
-        #endregion
 
+        #endregion
     }
 }
