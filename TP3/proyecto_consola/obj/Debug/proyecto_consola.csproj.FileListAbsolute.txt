@@ -1,0 +1,16 @@
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\obj\Debug\proyecto_consola.csprojAssemblyReference.cache
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\obj\Debug\proyecto_consola.csproj.CoreCompileInputs.cache
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\proyecto_consola.exe.config
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\proyecto_consola.exe
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\proyecto_consola.pdb
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\Clases Abstractas.dll
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\Clases Instanciables.dll
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\Excepciones.dll
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\Archivos.dll
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\Clases Abstractas.pdb
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\Clases Instanciables.pdb
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\Excepciones.pdb
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\bin\Debug\Archivos.pdb
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\obj\Debug\proyecto_consola.csproj.CopyComplete
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\obj\Debug\proyecto_consola.exe
+C:\Users\Juan Pablo\source\repos\DosSantos.JuanPablo.2A.TP3\proyecto_consola\obj\Debug\proyecto_consola.pdb
