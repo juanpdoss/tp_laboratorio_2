@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidades;
-
 
 namespace MiCalculadora
 {
@@ -17,14 +14,9 @@ namespace MiCalculadora
         [STAThread]
         static void Main()
         {
-           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormCalculadora());
-
-
-     
-
         }
     }
 }

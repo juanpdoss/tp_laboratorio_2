@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9A40F94B-2E56-468E-AA15-7847B2A3BF12}</ProjectGuid>
+    <ProjectGuid>{CB12DB98-5BA1-4E7D-A44A-F28DBBA1E635}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MiCalculadora</RootNamespace>
     <AssemblyName>MiCalculadora</AssemblyName>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MiCalculadora.cs">
+    <Compile Include="FormCalculadora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MiCalculadora.Designer.cs">
-      <DependentUpon>MiCalculadora.cs</DependentUpon>
+    <Compile Include="FormCalculadora.Designer.cs">
+      <DependentUpon>FormCalculadora.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MiCalculadora.resx">
-      <DependentUpon>MiCalculadora.cs</DependentUpon>
+    <EmbeddedResource Include="FormCalculadora.resx">
+      <DependentUpon>FormCalculadora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Entidades\entidades.csproj">
-      <Project>{04b8da22-12fa-41b2-b494-d70c1f18ea0e}</Project>
-      <Name>entidades</Name>
+    <ProjectReference Include="..\tp1\Entidades.csproj">
+      <Project>{ce3b6920-ae03-4d8b-a939-d6648bd312e0}</Project>
+      <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
