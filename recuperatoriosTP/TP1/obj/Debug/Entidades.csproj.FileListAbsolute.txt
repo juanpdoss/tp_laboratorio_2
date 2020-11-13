@@ -1,0 +1,6 @@
+C:\Users\Juan Pablo\Desktop\recuperatoriotp1\tp1\bin\Debug\tp1.dll
+C:\Users\Juan Pablo\Desktop\recuperatoriotp1\tp1\bin\Debug\tp1.pdb
+C:\Users\Juan Pablo\Desktop\recuperatoriotp1\tp1\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Juan Pablo\Desktop\recuperatoriotp1\tp1\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Juan Pablo\Desktop\recuperatoriotp1\tp1\obj\Debug\tp1.dll
+C:\Users\Juan Pablo\Desktop\recuperatoriotp1\tp1\obj\Debug\tp1.pdb
