@@ -95,17 +95,10 @@ namespace MiCalculadora
         private void btnOperar_Click(object sender, EventArgs e)
         {
             double resultado;
-            if (!string.IsNullOrWhiteSpace(cmbOperador.Text))
-            {
-                resultado = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
-                
-            }
-            else
-            {
-                this.cmbOperador.SelectedIndex = 1;
-                resultado = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
-            }
-
+            if (string.IsNullOrWhiteSpace(cmbOperador.Text))           
+                        this.cmbOperador.SelectedIndex = 1;                  
+            
+            resultado = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
             this.Resultado.Text = resultado.ToString();
 
         }
