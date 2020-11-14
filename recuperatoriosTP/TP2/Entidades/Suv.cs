@@ -5,50 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Entidades
-{
-    /// <summary>
-    /// clase publica Ciclomotor, hija de la clase Vehiculo.
+{   /// <summary>
+    /// clase publica Suv, hija de la clase Vehiculo. 
     /// </summary>
-    public class Ciclomotor : Vehiculo
+    public class Suv : Vehiculo
     {
-        #region constructor
         /// <summary>
-        /// constructor de instancia, recibe los 3 parametros y reutiliza el constructor de Vehiculo.
+        /// constructor de objeto, recibe los 3 parametros y reutiliza el constructor de Vehiculo.
         /// </summary>
         /// <param name="marca"></param>
         /// <param name="chasis"></param>
         /// <param name="color"></param>
-        public Ciclomotor(EMarca marca, string chasis, ConsoleColor color)
-                            :base(marca,chasis,color)
+        public Suv(EMarca marca, string chasis, ConsoleColor color)
+            : base(marca, chasis, color)
         {
-
-
         }
-        #endregion
-
-        #region propiedades
         /// <summary>
-        /// Las motos son chicas
+        /// Las camionetas son grandes
         /// </summary>
         protected override ETamanio Tamanio
         {
             get
             {
-                return ETamanio.Chico;
+                //retorno mediano para coincidir con el ejecutable de ejemplo que se nos dio 
+                return ETamanio.Mediano;
             }
         }
-        #endregion
-
-        #region metodos
         /// <summary>
-        /// override del metodo Mostrar de vehiculo, lista la moto agregando el tamaño.
+        /// override del metodo Mostrar de vehiculo, lista la camioneta agregando el tamanio
         /// </summary>
         /// <returns></returns>
         public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("CICLOMOTOR");
+            sb.AppendLine("SUV");
             sb.AppendLine(base.Mostrar());
             sb.AppendFormat("TAMAÑO : {0}\n", this.Tamanio);
             sb.AppendLine("");
@@ -56,7 +47,5 @@ namespace Entidades
 
             return sb.ToString();
         }
-
-        #endregion
     }
 }
