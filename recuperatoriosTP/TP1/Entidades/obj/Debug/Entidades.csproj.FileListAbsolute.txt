@@ -4,3 +4,9 @@ C:\Users\Juan Pablo\source\repos\TP1 recuperatorio\TP1 recuperatorio\Entidades\o
 C:\Users\Juan Pablo\source\repos\TP1 recuperatorio\TP1 recuperatorio\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Juan Pablo\source\repos\TP1 recuperatorio\TP1 recuperatorio\Entidades\obj\Debug\Entidades.dll
 C:\Users\Juan Pablo\source\repos\TP1 recuperatorio\TP1 recuperatorio\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\Entidades\bin\Debug\Entidades.dll
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\Entidades\obj\Debug\Entidades.dll
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\Entidades\obj\Debug\Entidades.pdb

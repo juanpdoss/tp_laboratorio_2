@@ -98,8 +98,15 @@ namespace MiCalculadora
             if (!string.IsNullOrWhiteSpace(cmbOperador.Text))
             {
                 resultado = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
-                this.Resultado.Text = resultado.ToString();
+                
             }
+            else
+            {
+                this.cmbOperador.SelectedIndex = 1;
+                resultado = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
+            }
+
+            this.Resultado.Text = resultado.ToString();
 
         }
         /// <summary>
