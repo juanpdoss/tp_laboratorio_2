@@ -37,7 +37,7 @@ namespace MiCalculadora
             this.txtNumero1 = new System.Windows.Forms.TextBox();
             this.txtNumero2 = new System.Windows.Forms.TextBox();
             this.cmbOperador = new System.Windows.Forms.ComboBox();
-            this.Resultado = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
@@ -133,15 +133,14 @@ namespace MiCalculadora
             this.cmbOperador.Size = new System.Drawing.Size(158, 41);
             this.cmbOperador.TabIndex = 1;
             // 
-            // Resultado
+            // lblResultado
             // 
-            this.Resultado.AutoSize = true;
-            this.Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Resultado.Location = new System.Drawing.Point(624, 29);
-            this.Resultado.Name = "Resultado";
-            this.Resultado.Size = new System.Drawing.Size(144, 33);
-            this.Resultado.TabIndex = 8;
-            this.Resultado.Text = "resultado";
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(600, 27);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(0, 33);
+            this.lblResultado.TabIndex = 8;
             // 
             // FormCalculadora
             // 
@@ -149,7 +148,7 @@ namespace MiCalculadora
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Resultado);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.cmbOperador);
             this.Controls.Add(this.txtNumero2);
             this.Controls.Add(this.txtNumero1);
@@ -180,7 +179,7 @@ namespace MiCalculadora
         private System.Windows.Forms.TextBox txtNumero1;
         private System.Windows.Forms.TextBox txtNumero2;
         private System.Windows.Forms.ComboBox cmbOperador;
-        private System.Windows.Forms.Label Resultado;
+        private System.Windows.Forms.Label lblResultado;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

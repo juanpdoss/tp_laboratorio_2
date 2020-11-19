@@ -58,7 +58,7 @@ namespace Entidades
         /// <returns></returns>
         public string BinarioDecimal(string binario)
         {
-            int numero = 0;
+            Int32 numero = 0;
             string retorno = "Valor invalido";
 
             if (EsBinario(binario))
@@ -77,17 +77,15 @@ namespace Entidades
         public string DecimalBinario(double numero)
         {
             string retorno = "Valor invalido";
-            if (numero > 0)
+            if (numero > 0 && numero < Int32.MaxValue)
             {
                 retorno = Convert.ToString((int)numero, 2);
             }
 
             return retorno;
-
         }
         /// <summary>
-        /// Convierte, en caso de ser posible, el numero decimal contenido en la cadena recibida como parametro
-        /// a su representacion en binario
+        /// Convierte, en caso de ser posible, el numero decimal recibido como parametro a su representacion en binario
         /// </summary>
         /// <param name="numero" cadena que contiene el numero></param>
         /// <returns></returns>
@@ -141,15 +139,8 @@ namespace Entidades
         /// <returns></returns>
         private static double ValidarNumero(string strNumero)
         {
-            double numeroValidado;
-
-            if (!double.TryParse(strNumero, out numeroValidado))
-            {
-                numeroValidado = 0;
-            }
-
-
-            return numeroValidado;
+            double.TryParse(strNumero, out double numeroAux);
+            return numeroAux;
 
         }
         #endregion

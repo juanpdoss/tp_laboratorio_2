@@ -22,18 +22,6 @@ namespace MiCalculadora
         }
 
         /// <summary>
-        /// borrará los datos de los TextBox, ComboBox y Label de la pantalla
-        /// </summary>
-        private void Limpiar()
-        {
-            this.Resultado.Text = "";
-            this.txtNumero1.Text = "";
-            this.txtNumero2.Text = "";
-            this.cmbOperador.SelectedIndex = -1;
-
-        }
-
-        /// <summary>
         /// Manejador del evento que se dispara momentos previos a que el formulario se haga visible.
         /// Llamara la metodo limpiar y asignara nombre al formulario.
         /// </summary>
@@ -94,24 +82,10 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            double resultado;
-            if (string.IsNullOrWhiteSpace(cmbOperador.Text))           
-                        this.cmbOperador.SelectedIndex = 1;                  
-            
-            resultado = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
-            this.Resultado.Text = resultado.ToString();
+           double resultado;                  
+           resultado = FormCalculadora.Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
+           this.lblResultado.Text = resultado.ToString();
 
-        }
-        /// <summary>
-        /// Realiza la operacion correspondiente entre dos numeros basandose en el operador elegido. 
-        /// </summary>
-        /// <param name="numero1" objeto de tipo Numero></param>
-        /// <param name="numero2" objeto de tipo Numero></param>
-        /// <param name="operador" cadena que contiene el operador></param>
-        /// <returns></returns>
-        private static double Operar(string numero1, string numero2, string operador)
-        {
-            return Calculadora.Operar(new Numero(numero1), new Numero(numero2), Convert.ToChar(operador));
         }
         /// <summary>
         /// Convertira el resultado, de existir, a su representacion en binario.
@@ -121,9 +95,9 @@ namespace MiCalculadora
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             Numero numAux = new Numero();
-            if (!string.IsNullOrEmpty(this.Resultado.Text))
+            if (!string.IsNullOrEmpty(this.lblResultado.Text))
             {
-                this.Resultado.Text = numAux.DecimalBinario(this.Resultado.Text);
+                this.lblResultado.Text = numAux.DecimalBinario(this.lblResultado.Text);
 
             }
         }
@@ -135,11 +109,42 @@ namespace MiCalculadora
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             Numero numAux = new Numero();
-            if (!string.IsNullOrEmpty(this.Resultado.Text))
+            if (!string.IsNullOrEmpty(this.lblResultado.Text))
             {
-                this.Resultado.Text = numAux.BinarioDecimal(this.Resultado.Text);
+                this.lblResultado.Text = numAux.BinarioDecimal(this.lblResultado.Text);
             }
 
         }
+
+        #region metodos
+
+        /// <summary>
+        /// borrará los datos de los TextBox, ComboBox y Label de la pantalla
+        /// </summary>
+        private void Limpiar()
+        {
+            this.lblResultado.Text = "";
+            this.txtNumero1.Text = "";
+            this.txtNumero2.Text = "";
+            this.cmbOperador.SelectedIndex = -1;
+
+        }
+
+        /// <summary>
+        /// Realiza la operacion correspondiente entre dos numeros basandose en el operador elegido. 
+        /// </summary>
+        /// <param name="numero1" objeto de tipo Numero></param>
+        /// <param name="numero2" objeto de tipo Numero></param>
+        /// <param name="operador" cadena que contiene el operador></param>
+        /// <returns></returns>
+        private static double Operar(string numero1, string numero2, string operador)
+        {
+            char operadorAuxiliar;
+            char.TryParse(operador, out operadorAuxiliar);
+            return Calculadora.Operar(new Numero(numero1), new Numero(numero2), operadorAuxiliar);
+        }
+
+        #endregion
+
     }
 }

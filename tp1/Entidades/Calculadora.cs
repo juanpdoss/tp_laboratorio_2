@@ -38,28 +38,25 @@ namespace Entidades
         /// <returns> retorna el resultado de la operacion </returns>
         public static double Operar(Numero num1, Numero num2, char operador)
         {
-            double rta = 0;
-            string operadorValidado = Calculadora.ValidarOperador(operador);
+            double resultado = 0;
 
-            switch (operadorValidado)
-            {
+            switch (Calculadora.ValidarOperador(operador))
+            {               
                 case "-":
-                    rta = num1 - num2;
-                    break;
-                case "*":
-                    rta = num1 * num2;
+                    resultado = num1 - num2;
                     break;
                 case "/":
-                    rta = num1 / num2;
+                    resultado = num1 / num2;
                     break;
-                case "+":
-                    rta = num1 + num2;
+                case "*":
+                    resultado = num1 * num2;
                     break;
-
-
+                default:
+                    resultado = num1 + num2;
+                    break;
             }
 
-            return rta;
+            return resultado;
         }
 
     }

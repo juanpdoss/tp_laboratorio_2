@@ -22,3 +22,4 @@ C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\MiCalculadora\
 C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
 C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\MiCalculadora\obj\Debug\MiCalculadora.exe
 C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\MiCalculadora\obj\Debug\MiCalculadora.pdb
+C:\Users\Juan Pablo\Desktop\tp_laboratorio_2\recuperatoriosTP\TP1\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources
