@@ -30,7 +30,7 @@ namespace Entidades
 
         #region constructores 
         //constructor de instancia por defecto.
-        public Numero()
+        public Numero():this(0)
         {
 
         }
@@ -77,7 +77,7 @@ namespace Entidades
         public string DecimalBinario(double numero)
         {
             string retorno = "Valor invalido";
-            if (numero > 0 && numero < Int32.MaxValue)
+            if (numero >= 0 && numero < Int32.MaxValue)
             {
                 retorno = Convert.ToString((int)numero, 2);
             }
