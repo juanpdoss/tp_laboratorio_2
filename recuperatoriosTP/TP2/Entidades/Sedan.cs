@@ -46,9 +46,9 @@ namespace Entidades
         /// <param name="chasis"></param>
         /// <param name="color"></param>
         public Sedan(EMarca marca, string chasis, ConsoleColor color)
-                              :base(marca, chasis, color)
+                              :this(marca, chasis, color,ETipo.CuatroPuertas)
         {
-            this.tipo = ETipo.CuatroPuertas;
+           
         }
         /// <summary>
         /// contructor que recibe todos los parametros, asigna campo tipo. 
@@ -58,7 +58,7 @@ namespace Entidades
         /// <param name="Color"></param>
         /// <param name="tipo"></param>
         public Sedan(EMarca marca, string chasis, ConsoleColor Color,ETipo tipo)
-                            :this(marca,chasis,Color)
+                            :base(marca,chasis,Color)
         {
             this.tipo = tipo;
 
